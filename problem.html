@@ -10,7 +10,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">가? 안가?</div>
-            <ul class="nav-menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="problem.html" class="active">문제 제기</a></li>
                 <li><a href="solution.html">솔루션</a></li>
@@ -21,6 +26,22 @@
             </ul>
         </div>
     </nav>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
 
     <section class="page-header">
         <div class="container">
