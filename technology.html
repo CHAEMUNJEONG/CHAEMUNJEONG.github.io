@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 구현 - 진출로 임박 위험 예방 서비스</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">가? 안가?</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="problem.html">문제 제기</a></li>
+                <li><a href="solution.html">솔루션</a></li>
+                <li><a href="technology.html" class="active">기술 구현</a></li>
+                <li><a href="market.html">시장 분석</a></li>
+                <li><a href="business.html">비즈니스</a></li>
+                <li><a href="team.html">팀 소개</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>기술 구현: 4가지 핵심 구성</h1>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <div class="tech-card">
+                <div class="tech-header">
+                    <div class="tech-number">1</div>
+                    <div class="tech-icon-large">👁️</div>
+                    <h2>DMS (운전자 모니터링)</h2>
+                </div>
+                <div class="tech-content">
+                    <div class="tech-detail">
+                        <h3>시선 추적</h3>
+                        <p>운전자의 좌우 60도 범위 시선 감지 기능을 제공합니다.</p>
+                        
+                        <!-- DMS 60도 측정 이미지 -->
+                        <div class="dms-images-grid">
+                            <div class="dms-image-container">
+                                <img src="images/dms_1.JPG" alt="차량 디지털 계기판 - DMS 시스템" />
+                                <p class="dms-image-caption">차량 디지털 계기판 - DMS 시스템 작동 화면</p>
+                            </div>
+                            <div class="dms-image-container">
+                                <img src="images/dms_2.JPG" alt="DMS 60도 측정 - 나침반 앱을 통한 각도 확인" />
+                                <p class="dms-image-caption">DMS 60도 측정 - 나침반 앱을 통한 사이드미러 확인 각도 측정</p>
+                            </div>
+                            <div class="dms-image-container">
+                                <img src="images/dms_3.JPG" alt="DMS 60도 측정 - 차량 내부에서의 각도 확인" />
+                                <p class="dms-image-caption">차량 내부에서의 DMS 시선 추적 각도 측정 (60도 한계 확인)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="dms-visual">
+                            <div class="dms-diagram">
+                                <div class="driver-seat">
+                                    <div class="driver-head">운전자</div>
+                                    <div class="vision-angle left">60°</div>
+                                    <div class="vision-angle right">60°</div>
+                                    <div class="side-mirror left-mirror">좌측 사이드미러</div>
+                                    <div class="side-mirror right-mirror">우측 사이드미러</div>
+                                </div>
+                                <div class="dms-note">
+                                    <p>DMS는 60도 범위 내에서만 시선을 추적할 수 있습니다. 
+                                    우측 사이드미러를 확인하려면 약 75도 이상 회전이 필요하므로, 
+                                    이 한계를 활용하여 운전자가 우측을 확인하지 않았는지 감지합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">기술 동향:</span>
+                            <span class="spec-value">이미 상용화, 유럽 2022년부터 의무 장착</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">시장 규모:</span>
+                            <span class="spec-value">2023년 기준 25억 달러 (GM Insights)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">성장률:</span>
+                            <span class="spec-value">연평균 8.5% 성장 예상</span>
+                        </div>
+                    </div>
+                    <div class="tech-highlight">
+                        <h4>핵심 아이디어: DMS 한계의 역이용</h4>
+                        <p>의도적으로 DMS의 시선 추적 60도 한계를 활용하여, 운전자의 '우측 사이드미러 확인' 여부를 정밀 감지합니다. 
+                        추가 하드웨어가 불필요하여 압도적인 비용 절감 및 즉각적인 상용화가 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-header">
+                    <div class="tech-number">2</div>
+                    <div class="tech-icon-large">📡</div>
+                    <h2>V2V 통신</h2>
+                </div>
+                <div class="tech-content">
+                    <div class="tech-detail">
+                        <h3>기술 표준</h3>
+                        <div class="standard-grid">
+                            <div class="standard-item">
+                                <h4>DSRC</h4>
+                                <p>IEEE 802.11p 기반</p>
+                                <p>Wi-Fi 기반 통신 표준</p>
+                            </div>
+                            <div class="standard-item">
+                                <h4>C-V2X</h4>
+                                <p>3GPP 표준</p>
+                                <p>LTE-V2X / 5G-V2X 기술</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">통신 거리:</span>
+                            <span class="spec-value">300m ~ 1km 범위</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">지연 시간:</span>
+                            <span class="spec-value">10 ~ 100ms 이내</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">핵심 기능:</span>
+                            <span class="spec-value">차량 간 실시간 정보 공유</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">정부 목표:</span>
+                            <span class="spec-value">2027년 상용화</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">시장 규모:</span>
+                            <span class="spec-value">2024년 기준 41억 달러 (GM Insights)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">성장률:</span>
+                            <span class="spec-value">연평균 25.1% 급성장</span>
+                        </div>
+                    </div>
+                    <div class="tech-highlight">
+                        <h4>Perfect Timing</h4>
+                        <p>정부 V2V 상용화 목표(2027년)와 일치하여, 완벽한 타이밍의 기술입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-header">
+                    <div class="tech-number">3</div>
+                    <div class="tech-icon-large">🗺️</div>
+                    <h2>네비게이션 연동</h2>
+                </div>
+                <div class="tech-content">
+                    <div class="tech-detail">
+                        <h3>통신 방식</h3>
+                        <p>차량 내부 통신(CAN 통신)을 통해 데이터를 융합합니다.</p>
+                        <div class="navi-flow">
+                            <div class="flow-box">네비게이션<br>"진출 의도"</div>
+                            <div class="flow-arrow">+</div>
+                            <div class="flow-box">DMS<br>"운전자 상태"</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-box result">AI 분석<br>위험 예측</div>
+                        </div>
+                    </div>
+                    <div class="tech-highlight">
+                        <h4>핵심 기능</h4>
+                        <p>목적지 정보를 활용하여 운전자의 진출 의도를 파악하고, 500m 전부터 모니터링을 시작합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-header">
+                    <div class="tech-number">4</div>
+                    <div class="tech-icon-large">🏗️</div>
+                    <h2>실증 환경</h2>
+                </div>
+                <div class="tech-content">
+                    <div class="tech-detail">
+                        <h3>테스트베드</h3>
+                        <p>K-City를 활용하여 실증을 진행합니다.</p>
+                    </div>
+                    <div class="tech-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">개발 상황:</span>
+                            <span class="spec-value">2025년까지 3단계 고도화 완료 예정</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">주관:</span>
+                            <span class="spec-value">한국교통안전공단</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-section">
+        <div class="container">
+            <h2 class="section-title">AI 분석 및 모델링</h2>
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <h3>최신 AI 동향 (FSD 사례)</h3>
+                    <div class="ai-evolution">
+                        <div class="ai-stage old">
+                            <h4>과거</h4>
+                            <p>규칙 기반 시스템</p>
+                        </div>
+                        <div class="ai-arrow">→</div>
+                        <div class="ai-stage new">
+                            <h4>현재</h4>
+                            <p>엔드투엔드(End-to-End) AI</p>
+                            <p class="ai-detail">방대한 영상 데이터로 학습</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-card">
+                    <h3>AI 기술 진화</h3>
+                    <ul class="ai-features">
+                        <li>Vision-only로 '희귀/예외 상황(Long-tail)' 인지</li>
+                        <li>HD맵 없이 AI가 차량 직접 제어</li>
+                        <li>실시간 위험 예측 및 판단</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>시장 분석 보기</h2>
+            <a href="market.html" class="cta-button">시장 분석 →</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 가던 길 안전하게 가세요 (가 안가). All rights reserved.</p>
+            <p>문의: a8275151@hs.ac.kr</p>
+        </div>
+    </footer>
+</body>
+</html>
+
