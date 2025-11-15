@@ -1874,9 +1874,143 @@ body {
     line-height: 1.6;
 }
 
+/* 모바일 반응형 스타일 */
 @media (max-width: 768px) {
     .dms-images-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .dms-image-container {
+        padding: 0.75rem;
+        border-radius: 10px;
+    }
+
+    .dms-image-container img {
+        max-height: 300px;
+        border-radius: 8px;
+    }
+
+    .dms-image-caption {
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        padding: 0 0.5rem;
+    }
+
+    /* 기술 섹션 모바일 조정 */
+    .tech-card {
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .tech-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .tech-header h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .tech-content {
+        padding: 1rem 0;
+    }
+
+    .tech-detail h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .tech-specs {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .spec-item {
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+
+    .tech-highlight {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .tech-highlight h4 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* 페이지 헤더 모바일 조정 */
+    .page-header {
+        padding: 40px 15px !important;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .page-subtitle {
+        font-size: 1rem !important;
+    }
+
+    /* 섹션 타이틀 모바일 조정 */
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0 1rem;
+    }
+}
+
+/* 작은 모바일 기기 (480px 이하) */
+@media (max-width: 480px) {
+    .dms-images-grid {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .dms-image-container {
+        padding: 0.5rem;
+    }
+
+    .dms-image-container img {
+        max-height: 250px;
+    }
+
+    .dms-image-caption {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .tech-card {
+        padding: 1rem !important;
+    }
+
+    .tech-header h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .section-title {
+        font-size: 1.5rem !important;
+    }
+
+    /* 네비게이션 모바일 조정 */
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 0 15px;
     }
 }
 
